@@ -1,13 +1,11 @@
 {
-  "mcp_servers": {
-    "filmtone": {
-      "command": "node",
-      "args": [
-        "./bin/filmtone-mcp-runner.mjs"
-      ],
-      "cwd": ".",
-      "startup_timeout_sec": 10,
-      "tool_timeout_sec": 21600
-    }
+  "filmtone": {
+    "command": "node",
+    "args": [
+      "./bin/filmtone-mcp-runner.mjs"
+    ],
+    "cwd": ".",
+    "startup_timeout_sec": 10,
+    "tool_timeout_sec": 21600
   }
 }
