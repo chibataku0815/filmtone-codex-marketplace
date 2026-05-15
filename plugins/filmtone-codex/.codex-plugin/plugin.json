@@ -1,0 +1,38 @@
+{
+  "name": "filmtone-codex",
+  "version": "0.1.0",
+  "description": "Inspect Filmtone video folders, preview batch export plans, and run tracked Filmtone exports from Codex via MCP.",
+  "author": {
+    "name": "chibataku0815",
+    "url": "https://github.com/chibataku0815"
+  },
+  "homepage": "https://github.com/chibataku0815/filmtone-codex-marketplace",
+  "repository": "https://github.com/chibataku0815/filmtone-codex-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "filmtone",
+    "video",
+    "color-grade",
+    "batch-export",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Filmtone Codex",
+    "shortDescription": "Batch grade-and-export Filmtone videos from Codex.",
+    "longDescription": "Lets Codex inspect Filmtone-ready video folders, preview dry-run batch export plans, and execute long-running Filmtone exports with progress events. Requires Filmtone Desktop with the automation helper installed locally.",
+    "developerName": "Filmtone",
+    "category": "Media",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/chibataku0815/filmtone-codex-marketplace",
+    "defaultPrompt": [
+      "Inspect this video folder for Filmtone export.",
+      "Preview a Filmtone social batch job.",
+      "Summarize the last Filmtone batch job."
+    ],
+    "brandColor": "#111827"
+  }
+}

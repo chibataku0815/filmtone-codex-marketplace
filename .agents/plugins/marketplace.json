@@ -1,0 +1,20 @@
+{
+  "name": "filmtone",
+  "interface": {
+    "displayName": "Filmtone"
+  },
+  "plugins": [
+    {
+      "name": "filmtone-codex",
+      "source": {
+        "source": "local",
+        "path": "./plugins/filmtone-codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Media"
+    }
+  ]
+}

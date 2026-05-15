@@ -1,0 +1,26 @@
+{
+  "name": "filmtone-codex-mcp-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf dist && esbuild src/index.ts src/automation-client.ts src/security.ts --bundle --platform=node --target=node18 --format=esm --outdir=dist",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && npm run typecheck && node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "esbuild": "^0.27.7",
+    "typescript": "^5.7.2"
+  },
+  "overrides": {
+    "fast-uri": "3.1.2",
+    "ip-address": "10.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
